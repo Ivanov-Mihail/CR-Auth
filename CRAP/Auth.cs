@@ -36,16 +36,13 @@ namespace CRAP
 
 	}
 
-
-
-
 	public class Auth
 	{
 		private readonly IConfiguration _configuration;
 
 		public Auth()
 		{
-			
+
 		}
 
 		public Auth(IConfiguration configuration)
@@ -63,11 +60,11 @@ namespace CRAP
 			{
 				File.Create(path);
 				File.WriteAllText(path, "{\"JWT\":\"\"");
-				
+
 			}
 
 			var myJsonString = File.ReadAllText("settings.json");
-	
+
 		}
 
 		public AuthUser GetPayloadAfterValidation(string bearerToken)

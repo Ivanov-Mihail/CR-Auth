@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CR-Auth\CR-Auth.csproj" />
     <ProjectReference Include="..\CRAP\CRAP.csproj" />
   </ItemGroup>
 
