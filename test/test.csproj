@@ -6,8 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="H3" Version="3.2.1-rc" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CR-Auth\CR-Auth.csproj" />
-    <ProjectReference Include="..\CRAP\CRAP.csproj" />
   </ItemGroup>
 
 </Project>

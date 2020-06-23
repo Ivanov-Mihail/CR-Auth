@@ -15,10 +15,6 @@ namespace CR_Auth
 {
 	public class Auth
 	{
-		public Auth()
-		{
-
-		}
 		public Auth(IConfiguration configuration)
 		{
 			_configuration = configuration;
@@ -31,8 +27,6 @@ namespace CR_Auth
 			var token = bearerToken.Replace("Bearer ", "");
 			var jsonWebToken = new JsonWebToken(token);
 
-			// for test
-			var jsonWebToken1 = new JsonWebToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNkOWVkNDI0YTkxOTlmYWJlMzkyNDc2NjQ4ZjU4MTk1NjFkOWQ2NGExYTNkOTA4MDk2M2IxZTgyY2JkNTQzOTIzMTEwYjFmOTcwY2FhZTQwIn0.eyJhdWQiOiIxIiwianRpIjoiM2Q5ZWQ0MjRhOTE5OWZhYmUzOTI0NzY2NDhmNTgxOTU2MWQ5ZDY0YTFhM2Q5MDgwOTYzYjFlODJjYmQ1NDM5MjMxMTBiMWY5NzBjYWFlNDAiLCJpYXQiOjE1OTE3MDI3MzYsIm5iZiI6MTU5MTcwMjczNiwiZXhwIjoxNjIzMjM4NzM2LCJzdWIiOiIyMSIsInNjb3BlcyI6W10sImlkIjoyMSwicm9sZXMiOlsic3VwZXItYWRtaW4iLCJhZG1pbiIsImNsaWVudCJdLCJwZXJtaXNzaW9ucyI6W119.LG8oMjkW_zi1vvcnltGWjSbLFJnST3auESyVdmSHezHNKa93sKKvOTkiVscC5QQSDNyBds-jkQwyUdfkyQkQctU3dXFZV_Ji2nYa42voWsDl-JLabsU-G9Gd9PzDr96Z1gN6zaOZiSDpekdDtn9z_KvFcISjfr6SAzfPkvCStpc0-YrAys1O2HfNsJqomgDIrzbTuAjVfJ7bThzdVE-ilNtK6jFbmoNKsZAHnhLKxHR4txnI-SOmOjgsmzhjblYg2Esm1c1c_z0D1LyisnVGIz15s1kPprI329tjlfOIrYm4PZYnMeXAeHSxVgjrIsCd5VCLLxyvYs6Hfcbp9VFCc-2z9KHpiKnlq0tDruEfqMp5Bp7lzMG_XXMKVotL0pryYISbYqQUVX-65X8rdTdM7qo_LUPYJQfwOhr6951bMEeCrVyfvNvizV26g2KRHghiziFH0gnANF8lrUIOFZMzG3BhOEPw08gEv6ZgdmtqBa68YbhB37abEpEEdUgbTUa7_CLhLs4aAg20h3t563n9f0dlUpEgtwgKxtMB7VZ-suBeV819Eo814he9D3iEr-Z99kt49vdiZUUIikwv12VLyPhjzyziTbHUPdtGPIpxYrH9HfL4upF2M9SqId9m_NsWanXK6zRSlXcYt3n4oFeBB-Xn5ggfY3nqjiBFP37xXUk");
 
 			// 1st implementation
 			AuthUser authUserData;
